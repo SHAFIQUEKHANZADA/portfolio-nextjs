@@ -50,12 +50,15 @@ export const CardStack = ({
   };
 
   return (
-    <div data-aos="zoom-out-up" className="relative h-60 w-60 md:h-60 md:w-96 mx-auto flex justify-center  my-10">
+    <div
+      data-aos="zoom-out-up"
+      className="relative h-60 w-60 md:h-60 md:w-96 mx-auto flex justify-center  my-10"
+    >
       {cards.map((card, index) => {
         return (
           <motion.div
             key={card.id}
-           className="absolute bg-gradient-to-b from-slate-300 to-slate-100 dark:from-slate-950 dark:to-slate-950 h-60 w-60 md:h-60 md:w-96 rounded-3xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
+            className="absolute bg-gradient-to-b from-slate-300 to-slate-100 dark:from-slate-950 dark:to-slate-950 lg:h-[260px] lg:w-[390px] h-[200px]  w-[280px] lg:rounded-3xl rounded-xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
             style={{
               transformOrigin: "top center",
             }}
@@ -65,7 +68,7 @@ export const CardStack = ({
               zIndex: cards.length - index,
             }}
           >
-            <div className="font-normal text-neutral-700 dark:text-neutral-200">
+            <div className="font-normal text-neutral-700 dark:text-neutral-200 text-xs lg:text-base">
               {card.content}
             </div>
             <div>
@@ -108,7 +111,7 @@ export const CardStackTwo = ({
     // Start the flipping effect after a 2-second delay
     const timeoutId = setTimeout(() => {
       startFlipping();
-    }, 1000);  
+    }, 1000);
 
     // Clear the interval and timeout on cleanup
     return () => {
@@ -128,12 +131,15 @@ export const CardStackTwo = ({
   };
 
   return (
-    <div data-aos="zoom-out-up" className="relative h-60 w-60 md:h-60 md:w-96 mx-auto flex justify-center  my-10">
+    <div
+      data-aos="zoom-out-up"
+      className="relative h-60 w-60 md:h-60 md:w-96 mx-auto flex justify-center  my-10"
+    >
       {cards.map((card, index) => {
         return (
           <motion.div
             key={card.id}
-           className="absolute bg-gradient-to-b from-slate-300 to-slate-100 dark:from-slate-950 dark:to-slate-950 h-60 w-60 md:h-60 md:w-96 rounded-3xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
+            className="absolute bg-gradient-to-b from-slate-300 to-slate-100 dark:from-slate-950 dark:to-slate-950 lg:h-[260px] lg:w-[390px] h-[200px]  w-[280px] lg:rounded-3xl rounded-xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
             style={{
               transformOrigin: "top center",
             }}
@@ -143,7 +149,7 @@ export const CardStackTwo = ({
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
             }}
           >
-            <div className="font-normal text-neutral-700 dark:text-neutral-200">
+            <div className="font-normal text-neutral-700 dark:text-neutral-200 text-xs lg:text-base">
               {card.content}
             </div>
             <div>
@@ -204,12 +210,16 @@ export const CardStackThree = ({
     }, 5000); // Flipping every 5 seconds
   };
   return (
-    <div data-aos="zoom-out-up" className="relative h-60 w-60 md:h-60 md:w-96 mx-auto flex justify-center  my-10">
+    <div
+      data-aos="zoom-out-up"
+      className="relative h-60 w-60 md:h-60 md:w-96 mx-auto flex justify-center  my-10"
+    >
       {cards.map((card, index) => {
         return (
           <motion.div
             key={card.id}
-className="absolute bg-gradient-to-b from-slate-300 to-slate-100 dark:from-slate-950 dark:to-slate-950 h-60 w-60 md:h-60 md:w-96 rounded-3xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
+            className="absolute bg-gradient-to-b from-slate-300 to-slate-100 dark:from-slate-950 dark:to-slate-950 
+            lg:h-[260px] lg:w-[390px] h-[200px]  w-[280px] lg:rounded-3xl rounded-xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
             style={{
               transformOrigin: "top center",
             }}
@@ -219,7 +229,7 @@ className="absolute bg-gradient-to-b from-slate-300 to-slate-100 dark:from-slate
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
             }}
           >
-            <div className="font-normal text-neutral-700 dark:text-neutral-200">
+            <div className="font-normal text-neutral-700 dark:text-neutral-200 text-xs lg:text-base">
               {card.content}
             </div>
             <div>

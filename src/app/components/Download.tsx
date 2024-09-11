@@ -22,7 +22,7 @@ export function DownloadButton({ isHovered, fileUrl }: DownloadButtonProps) {
     <div className="w-28 h-9 mt-4 relative">
       <button
         onClick={handleDownload}
-        className="cv w-full h-full rounded-md bg-gradient-to-r from-slate-600 to-slate-200 shadow-sm  border-black dark:border-white dark:text-white text-base transition-all duration-200 relative overflow-hidden"
+        className="cv w-full h-full rounded-md bg-gradient-to-r from-slate-300 to-slate-100 shadow-sm border  border-zinc-100 dark:border-none dark:text-white text-base transition-all duration-200 relative overflow-hidden"
       >
         {/* Text */}
         <span
