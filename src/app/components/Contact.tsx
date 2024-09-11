@@ -1,9 +1,6 @@
 "use client";
 import React from "react";
 import { cn } from "@/lib/utils";
-import { IconBrandGithub, IconBrandGoogle } from "@tabler/icons-react";
-import { FaMicrosoft } from "react-icons/fa";
-import { StaticSpotlight } from "./Spottlight";
 import { IoSend } from "react-icons/io5";
 
 export function SignupFormDemo() {
@@ -16,7 +13,6 @@ export function SignupFormDemo() {
     <div className="relative">
       <div className="relative z-10 mt-20">
         <div className="flex justify-center mt-20 mb-10 lg:mb-1">
-          <StaticSpotlight className="justify-center items-center lg:block hidden" />
           <h1 className="lg:text-5xl text-4xl font-bold text-center">
             <span className="serCol">Contact</span> Me
           </h1>

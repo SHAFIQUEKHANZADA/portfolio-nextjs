@@ -36,7 +36,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-20 dark:bg-[rgb(36,36,36,0.5)] backdrop-saturate-[180%]  bg-[hsla(0,0%,100%,.8)] backdrop-blur-[5px]  border-b-[1px] border-zinc-300  dark:border-zinc-800">
-      <div className="max-w-1xl mx-auto px-5 sm:px-6 lg:px-6">
+      <div className="max-w-1xl mx-auto px-3 sm:px-6 lg:px-6">
         <div className="flex items-center justify-between  my-1.5">
           <div className="flex items-center justify-between w-full md:w-auto">
             <div className="flex gap-2 items-center">
