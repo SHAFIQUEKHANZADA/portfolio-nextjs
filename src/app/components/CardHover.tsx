@@ -37,17 +37,17 @@ export function CardHoverEffectDemo() {
       link: "https://github.com/SHAFIQUEKHANZADA/dashboard-with-nextjs",
     },
     {
-      imageSrc: "/robiz.png",
-      title: "Amazon",
+      imageSrc: "/sch.png",
+      title: "Student Management System",
       description:
-        "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-      link: "https://amazon.com",
+        "This is Nodejs CLI project, i have made this project student managment system as an assignment in class of governor initiative of artifical intelligence and metaverse",
+      link: "https://github.com/SHAFIQUEKHANZADA/Student-Management-System",
     },
     {
-      imageSrc: "/robiz.png",
-      title: "Microsoft",
+      imageSrc: "/ha.jpg",
+      title: "100 Days of Coding",
       description:
-        "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-      link: "https://microsoft.com",
+        "This is hunderd days of coding challange i have done a an assignment also. there are lots of mini nodejs CLI projects in challange that i have made you can see by clicking here",
+      link: "https://github.com/SHAFIQUEKHANZADA/100-days-of-coding-challenge",
     },
   ];
