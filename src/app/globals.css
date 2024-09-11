@@ -32,7 +32,8 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    /* --background: 222.2 84% 4.9%; */
+    --background: 0 0% 0%;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
@@ -58,6 +59,9 @@
     --chart-5: 340 75% 55%;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 @layer base {
   * {
@@ -70,26 +74,34 @@
 
 .bg-custom-light {
   background-color: white; /* Light mode background color */
-  height: 80vh; /* 80% of the viewport height */
+  /* height: 80vh; //80% of the viewport height */
 }
 
 /* Dark mode gradient background */
 .dark .bg-custom-dark {
-  background: linear-gradient(to bottom, #0d1738, #000000); /* Blue to black gradient */
-  height: 80vh; /* 80% of the viewport height */
+  background: linear-gradient(
+    0deg,
+    #000,
+    rgba(0, 0, 1, 0.54) 27%,
+    rgba(23, 45, 69, 0.53) 59%,
+    rgba(43, 56, 94, 0.55) 69%,
+    rgba(33, 45, 92, 0.57) 81%,
+    rgba(11, 47, 149, 0.4) 95%,
+    rgba(11, 27, 72, 0.64)
+  );
 }
 
 .xz {
-  font-weight: bold; /* Optional: make text bold */
-  background: linear-gradient(to right, #87beed, #43bba0); /* Gradient background */
-  -webkit-background-clip: text; /* For WebKit browsers (Chrome, Safari) */
-  -moz-background-clip: text; /* For Firefox */
-  background-clip: text; /* Standard */
-  color: transparent; /* Hide the original text color */
+  color: rgb(236, 100, 30);
 }
+
 .xyz {
-  font-weight: bold; /* Optional: make text bold */
-  background: linear-gradient(to right, #87beed, #43bba0); /* Gradient background */
+  /* font-weight: bold; Optional: make text bold */
+  background: linear-gradient(
+    to right,
+    #87beed,
+    #43bba0
+  ); /* Gradient background */
   -webkit-background-clip: text; /* For WebKit browsers (Chrome, Safari) */
   -moz-background-clip: text; /* For Firefox */
   background-clip: text; /* Standard */
@@ -105,5 +117,184 @@
 
 /* Dark mode gradient background */
 .dark .cv {
-  background: linear-gradient(to right, #0f1b41, #393434); /* Blue to black gradient */
+  background: linear-gradient(
+    to right,
+    #0f1b41,
+    #393434
+  ); /* Blue to black gradient */
+}
+
+.scrollable-container {
+  max-height: 400px;
+  overflow-y: scroll;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+@media (max-width: 768px) {
+  .scrollable-container {
+    max-height: 700px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .scrollable-container {
+    max-height: 600px; /* Adjust height for larger screens */
+  }
+}
+
+.dark .xcx {
+  background: rgb(29, 26, 39);
+}
+
+.sha {
+  max-height: 400px;
+  overflow-y: scroll;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(196, 187, 187, 0.7) transparent; /* Firefox */
+  position: relative;
+  padding-bottom: 20px; /* Prevent content from being hidden behind the shadow */
+  /* box-shadow: inset 0px -10px 10px -10px rgba(0, 0, 0, 0.5);   */
+}
+
+.dark .sha {
+  max-height: 400px;
+  overflow-y: scroll;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgb(29, 26, 39) transparent; /* Firefox */
+  position: relative;
+  padding-bottom: 20px; /* Prevent content from being hidden behind the shadow */
+  /* box-shadow: inset 0px -10px 10px -10px rgba(153, 143, 143, 0.5);   */
+}
+
+/* WebKit Browsers */
+.sha::-webkit-scrollbar {
+  width: 3px; /* Width of the scrollbar */
+}
+.dark .sha::-webkit-scrollbar {
+  width: 3px; /* Width of the scrollbar */
+}
+
+.sha::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.7); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+.dark .sha::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.7); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.sha::-webkit-scrollbar-track {
+  background: transparent; /* The track of the scrollbar (background) */
+}
+.dark .sha::-webkit-scrollbar-track {
+  background: transparent; /* The track of the scrollbar (background) */
+}
+
+@media (max-width: 768px) {
+  .sha {
+    max-height: 600px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .sha {
+    max-height: 500px; /* Adjust height for larger screens */
+  }
+}
+@media (max-width: 768px) {
+  .dark .sha {
+    max-height: 600px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .dark .sha {
+    max-height: 500px; /* Adjust height for larger screens */
+  }
+}
+
+.serCol {
+  color: rgb(96, 165, 250);
+}
+.dark .serCol {
+  color: rgb(96, 165, 250);
+}
+
+[data-aos="flip-left"] {
+  transform: perspective(2500px) rotateY(-45deg); /* 45-degree rotation by default */
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+
+[data-aos="flip-left"].aos-animate {
+  transform: perspective(2500px) rotateY(0deg); /* Flip to 0 degrees when in view */
+}
+
+.tick {
+  color: rgb(59, 130, 246);
+}
+.dark .tick {
+  color: rgb(59, 130, 246);
+}
+
+.bl {
+  color: #87beed;
+}
+.blx {
+  color: #43bba0;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.q {
+  color: rgb(152, 150, 169);
+}
+
+.skill-container {
+  /* background: linear-gradient(to right, #535e6e, #d5d8dc)/50; */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+  border: 0.5px solid gray;
+}
+
+.dark .skill-container {
+  background: linear-gradient(to right, #0f1b41, #393434); 
+  border: none;
+}
+.transparent-input {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  color: #333;
+}
+.dark .transparent-input {
+  background-color: transparent;
+  border: 1px solid #312e2e;
+  padding: 8px;
+  border-radius: 4px;
+  color: #ffeeee;
+}
+
+.transparent-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.dark .about-bg {
+  background: linear-gradient(
+    0deg,
+    #000,
+    rgba(0, 0, 1, 0.54) 27%,
+    rgba(23, 45, 69, 0.53) 59%,
+    rgba(43, 56, 94, 0.55) 69%,
+    rgba(33, 45, 92, 0.57) 81%,
+    rgba(11, 47, 149, 0.4) 95%,
+    rgba(11, 27, 72, 0.64)
+  );
+}
+
+.about-bg {
+  background: white;
 }

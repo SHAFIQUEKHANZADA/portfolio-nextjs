@@ -2,7 +2,7 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 export function CardHoverEffectDemo() {
     return (
-      <div className=" px-8">
+      <div className="scrollable-container px-8 ">
         <HoverEffect items={projects} />
       </div>
     );
@@ -16,25 +16,25 @@ export function CardHoverEffectDemo() {
       link: "https://robiz-nextjs-ecommerce.vercel.app/",
     },
     {
-      imageSrc: "/robiz.png",
-      title: "Netflix",
+      imageSrc: "/capming.png",
+      title: "Hilink",
       description:
-        "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-      link: "https://netflix.com",
+        "Hilink is a travel website designed to help users discover and plan their ideal trips. It offers easy navigation, detailed destination guides, and travel tips, making trip planning simple and enjoyable for all travelers.",
+      link: "https://travel-app-with-next-js.vercel.app/",
     },
     {
-      imageSrc: "/robiz.png",
-      title: "Google",
+      imageSrc: "/made.png",
+      title: "SkyCast",
       description:
-        "A multinational technology company that specializes in Internet-related services and products.",
-      link: "https://google.com",
+        "SkyCast is a weather forecasting app built using Next.js and the OpenWeatherMap API. It provides real-time weather updates for over 40 cities across Pakistan. With a sleek and user-friendly interface, the app allows users to view current conditions, temperature, humidity, wind speed, and a detailed forecast.",
+      link: "https://github.com/SHAFIQUEKHANZADA/Weather-App-nextjs",
     },
     {
-      imageSrc: "/robiz.png",
-      title: "Meta",
+      imageSrc: "/dash.png",
+      title: "Dashboard",
       description:
-        "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-      link: "https://meta.com",
+        "A dynamic and interactive dashboard featuring various charts to provide insightful data visualization. The charts are designed to be user-friendly and responsive, allowing users to analyze data trends easily. By integrating real-time data, the dashboard ensures up-to-date insights, making it an essential tool for informed decision-making.",
+      link: "https://github.com/SHAFIQUEKHANZADA/dashboard-with-nextjs",
     },
     {
       imageSrc: "/robiz.png",

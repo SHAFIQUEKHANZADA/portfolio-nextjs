@@ -1,6 +1,7 @@
 import { AnimatedButton } from "@/app/components/AnimatedButon";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -22,7 +23,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 py-6 px-10",
+        "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-7 py-6 lg:px-10",
         className
       )}
     >
@@ -37,7 +38,7 @@ export const HoverEffect = ({
       <AnimatePresence>
         {hoveredIndex === idx && (
           <motion.span
-            className="absolute inset-0 h-70 w-30 bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+            className="absolute inset-0 h-70 w-21  p-4 lg:gap-5 mx-6 bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
             layoutId="hoverBackground"
             initial={{ opacity: 0 }}
             animate={{
@@ -74,13 +75,19 @@ export const Card = ({
   return (
     <div
     className={cn(
-      "rounded-2xl group h-80 w-21 p-4 gap-3 overflow-hidden mode-bg bg-gradient-to-b from-slate-600 to-white  border border-black dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 group",
+      "rounded-2xl group h-70 w-21  p-4 lg:gap-5 lg:mx-6 overflow-hidden mode-bg bg-gradient-to-b from-slate-600 to-white  border border-black dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 group",
       className
     )}
     onMouseEnter={() => setIsHovered(true)}
     onMouseLeave={() => setIsHovered(false)}
   >
-    <img src={imageSrc} alt="Card image" className="w-full h-[40%] overflow-y-hidden" />
+      <Image 
+        src={imageSrc} 
+        alt="Card image" 
+        width={300} // specify a suitable width
+        height={200} // specify a suitable height
+        className="w-full h-[40%] overflow-y-hidden " 
+      />
     <div className="relative z-50">
       <div className="">{children}</div>
     </div>
