@@ -1,6 +1,5 @@
 "use client";
 import {
-  useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
@@ -37,17 +36,6 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full bg-white dark:bg-black font-sans lg:px-28"
       ref={containerRef}
     >
-      {/* Header for the timeline */}
-      {/* <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="md:text-4xl mb-4 text-black dark:text-white max-w-4xl scroll-m-20  pb-2 text-3xl lg:text-7xl font-semibold tracking-tight first:mt-0">
-          My Experience
-        </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm ">
-          I've been working on Nextjs for the past 2 months. Here's
-          a timeline of my journey.
-        </p>
-      </div> */}
-
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
           <div
@@ -82,13 +70,16 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           <motion.div
             style={{
               height: heightTransform, // Adjusts the animated line according to the content's height
-              opacity: opacityTransform,
+              opacity: opacityTransform, // Adjusts the opacity dynamically
             }}
-            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[10%] via-0%] rounded-full"
+            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[10%] rounded-full"
+            transition={{
+              duration: 0.8, // Duration for smooth transition
+              ease: "easeInOut", // Choose a smooth easing function
+            }}
           />
         </div>
       </div>
     </div>
   );
 };
-
