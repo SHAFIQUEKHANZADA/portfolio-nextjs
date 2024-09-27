@@ -1,6 +1,11 @@
 "use client";
 import React from "react";
 import { cn } from "@/lib/utils";
+<<<<<<< HEAD
+=======
+import { IconBrandGithub, IconBrandGoogle } from "@tabler/icons-react";
+import { FaMicrosoft } from "react-icons/fa";
+>>>>>>> 379fe33e0ba07ba9ebc899be6fade1cc871082b0
 import { IoSend } from "react-icons/io5";
 
 export function SignupFormDemo() {
