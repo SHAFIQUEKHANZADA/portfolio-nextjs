@@ -16,6 +16,13 @@ export function CardHoverEffectDemo() {
       link: "https://robiz-nextjs-ecommerce.vercel.app/",
     },
     {
+      imageSrc: "/pana.jpg",
+      title: "Panacloud",
+      description:
+        "Panacloud PTV ltd Solutions is a comprehensive cloud-based platform designed to streamline business operations.",
+      link: "https://panacloud-website-rho.vercel.app/",
+    },
+    {
       imageSrc: "/capming.png",
       title: "Hilink",
       description:
