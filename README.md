@@ -5,13 +5,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+ https://portfolio-nextjs-two-tau.vercel.app/
+ 
 ```
 
 Open[ [http://localhost:3000](http://localhost:3000)](https://portfolio-nextjs-two-tau.vercel.app/) with your browser to see the result.
