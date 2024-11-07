@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 const page = () => {
@@ -43,12 +42,6 @@ const page = () => {
           development, I aim to contribute to this rapidly evolving field,
           helping businesses harness the transformative potential of AI while
           maintaining a focus on intuitive and accessible design.
-        </p>
-      </div>
-      <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full">
-        {/* <hr className=""/> */}
-        <p className="px-10 text-center py-6 font-extralight text-[12px] dark:text-zinc-200">
-          © 2024 Shafique Ur Rehman™. All Rights Reserved.
         </p>
       </div>
     </div>

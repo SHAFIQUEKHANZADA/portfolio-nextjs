@@ -14,10 +14,10 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="her flex max-lg:flex-col justify-around bg-custom-dark dark:bg-custom-dark items-center px-8 pt-16 max-[350px]:px-4 md:pt-24 pb-16 md:pb-32 select-none min-h-screen">
+    <div className="flex md:flex-row flex-col justify-around bg-custom-dark dark:bg-custom-dark items-center px-8 pt-16 max-[350px]:px-4 md:pt-24 pb-16 md:pb-32 select-none md:min-h-screen">
       {/* left */}
       <div className="z-10 max-md:min-h-screen max-md:flex flex-col justify-center">
-        <h1 className="lg:text-7xl text-5xl lg:pt-10 font-extrabold leading-tight tracking-tight scroll-m-20">
+        <h1 className="md:text-[5vw] lg:text-7xl text-5xl lg:pt-10 font-extrabold leading-tight tracking-tight scroll-m-20">
           <span className="text-orange-600">Hello,</span> my name is{" "}
           <span className="xyz font-extrabold">Shafique Ur Rehman</span> And i
           am{" "}
@@ -64,9 +64,9 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="lg:w-0.5 w-3/4 lg:h-56 h-0.5 lg:border-l border-b mt-28 mr-8 dark:border-zinc-200/40 max-md:hidden"></div>
+      <div className="md:w-0.5 flex md:flex-col flex-row w-3/4 md:h-56 h-0.5 md:border-l border-b mt-28 mr-8 dark:border-zinc-200/40"></div>
       {/* right */}
-      <div className="flex flex-col justify-center items-center z-10 max-w-md lg:pt-24 pt-8 px-4 sm-px-8">
+      <div className="flex flex-col justify-center items-center z-10 max-w-md lg:pt-24 md:pt-0 pt-8 px-4 sm-px-8">
         <h1 className="font-bold text-3xl md:text-4xl xl:mt-4 lg:mb-6 text-center lg:mr-8">
           Connect <span className="text-orange-600">With Me</span>
         </h1>

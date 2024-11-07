@@ -20,7 +20,7 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="grid gap-3 md:grid-cols-2 px-2 md:px-28 lg:px-40 lg:mt-20 mt-6 lg:h-screen h-full dark:bg-black mb-20 lg:overflow-y-hidden"
+      className="grid gap-3 md:grid-cols-2 px-2 sm:px-10 lg:px-[11.6vw] lg:mt-20 mt-6 lg:h-screen h-full dark:bg-black mb-20 lg:overflow-y-hidden"
     >
       <div data-aos="flip-left" className="px-3 lg:px-0">
         {" "}

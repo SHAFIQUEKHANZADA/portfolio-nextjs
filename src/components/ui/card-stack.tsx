@@ -28,9 +28,9 @@ export const CardStack = ({
 
   useEffect(() => {
     AOS.init({
-      duration: 600, // Duration of the animation
-      easing: "ease", // Easing function for the animation
-      once: false, // Whether animation should happen only once
+      duration: 600,  
+      easing: "ease",  
+      once: false,  
     });
   }, []);
 
@@ -52,13 +52,13 @@ export const CardStack = ({
   return (
     <div
       data-aos="zoom-out-up"
-      className="relative h-60 w-60 md:h-60 md:w-96 mx-auto flex justify-center  my-10"
+      className="relative h-60 w-60 md:h-60 md:w-96 mx-auto flex justify-center sm:my-10 my-3"
     >
       {cards.map((card, index) => {
         return (
           <motion.div
             key={card.id}
-            className="absolute bg-gradient-to-b from-slate-300 to-slate-100 dark:from-slate-950 dark:to-slate-950 lg:h-[260px] lg:w-[390px] h-[200px]  w-[280px] lg:rounded-3xl rounded-xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
+            className="absolute bg-gradient-to-b from-slate-300 to-slate-100 dark:from-slate-950 dark:to-slate-950 lg:h-[20vw] lg:w-[29vw] h-[200px]  w-[280px] lg:rounded-3xl rounded-xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
             style={{
               transformOrigin: "top center",
             }}
@@ -133,13 +133,13 @@ export const CardStackTwo = ({
   return (
     <div
       data-aos="zoom-out-up"
-      className="relative h-60 w-60 md:h-60 md:w-96 mx-auto flex justify-center  my-10"
+      className="relative h-60 w-60 md:h-60 md:w-96 mx-auto flex justify-center sm:my-10   my-3"
     >
       {cards.map((card, index) => {
         return (
           <motion.div
             key={card.id}
-            className="absolute bg-gradient-to-b from-slate-300 to-slate-100 dark:from-slate-950 dark:to-slate-950 lg:h-[260px] lg:w-[390px] h-[200px]  w-[280px] lg:rounded-3xl rounded-xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
+            className="absolute bg-gradient-to-b from-slate-300 to-slate-100 dark:from-slate-950 dark:to-slate-950 lg:h-[20vw] lg:w-[29vw] h-[200px]  w-[280px] lg:rounded-3xl rounded-xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
             style={{
               transformOrigin: "top center",
             }}
@@ -212,21 +212,21 @@ export const CardStackThree = ({
   return (
     <div
       data-aos="zoom-out-up"
-      className="relative h-60 w-60 md:h-60 md:w-96 mx-auto flex justify-center  my-10"
+      className="relative h-60 w-60 md:h-60 md:w-96 mx-auto flex justify-center sm:my-10 my-3"
     >
       {cards.map((card, index) => {
         return (
           <motion.div
             key={card.id}
             className="absolute bg-gradient-to-b from-slate-300 to-slate-100 dark:from-slate-950 dark:to-slate-950 
-            lg:h-[260px] lg:w-[390px] h-[200px]  w-[280px] lg:rounded-3xl rounded-xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
+            lg:h-[20vw] lg:w-[29vw] h-[200px]  w-[280px] lg:rounded-3xl rounded-xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
             style={{
               transformOrigin: "top center",
             }}
             animate={{
               top: index * -CARD_OFFSET,
-              scale: 1 - index * SCALE_FACTOR, // decrease scale for cards that are behind
-              zIndex: cards.length - index, //  decrease z-index for the cards that are behind
+              scale: 1 - index * SCALE_FACTOR,  
+              zIndex: cards.length - index,  
             }}
           >
             <div className="font-normal text-neutral-700 dark:text-neutral-200 text-xs lg:text-base">

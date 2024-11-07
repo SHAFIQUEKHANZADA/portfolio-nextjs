@@ -16,8 +16,8 @@ export function CardStackDemo() {
           Client & Colleague Endorsements
         </h1>
       </div>
-      <div className=" grid mt-24 sm:mx-auto md:mx-auto  md:grid-cols-1  items-center  w-full">
-      <div className="md:mx-auto lg:flex  gap-7 justify-evenly sm:h-auto">
+      <div className="grid mt-24 sm:mx-auto  md:grid-cols-1  items-center  w-full">
+      <div className="md:mx-auto flex lg:flex-row flex-col  lg:gap-7 gap-0 justify-evenly sm:h-auto">
       <CardStack items={CARDS} />
         <CardStackTwo items={CARDSS} />
         <CardStackThree items={CARDSSS} />
@@ -27,7 +27,7 @@ export function CardStackDemo() {
   );
 }
 
-// Small utility to highlight the content of specific section of a testimonial content
+ 
 export const Highlight = ({
   children,
   className,

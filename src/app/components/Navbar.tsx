@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { FaBars, FaTimes, FaMoon } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { IoMoonOutline, IoSunny } from "react-icons/io5";
 import { PopoverDemo } from "./PopOver";
 
@@ -101,11 +101,10 @@ const Navbar = () => {
                 About
               </Link>
               <Link
-                href="#services"
-                scroll={true}
+                href="/contact"
                 className=" text-gray-400 hover:text-black dark:hover:text-white  px-3 py-2 rounded-md text-sm font-medium"
               >
-                Services
+                Contact
               </Link>
             </div>
             {/* Dark mode toggle button for desktop */}
@@ -124,11 +123,10 @@ const Navbar = () => {
             </Link>{" "}
             <br />
             <Link
-              href="#services"
-              scroll={true}
+              href="/contact"
               className="dark:text-gray-400 leading-5 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
-              Services
+              Contact
             </Link>
           </div>
         </div>
