@@ -64,7 +64,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="md:w-0.5 flex md:flex-col flex-row w-3/4 md:h-56 h-0.5 md:border-l border-b mt-28 mr-8 dark:border-zinc-200/40"></div>
+      <div className="md:w-0.5 flex md:flex-col flex-row w-3/4 md:h-56 h-0.5 md:border-l border-b mt-28 md:mr-8 dark:border-zinc-200/40"></div>
       {/* right */}
       <div className="flex flex-col justify-center items-center z-10 max-w-md lg:pt-24 md:pt-0 pt-8 px-4 sm-px-8">
         <h1 className="font-bold text-3xl md:text-4xl xl:mt-4 lg:mb-6 text-center lg:mr-8">
